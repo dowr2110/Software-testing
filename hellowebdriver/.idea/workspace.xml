@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1ebe8c57-7c1f-46fc-9164-08a713edc155" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Java IDE\IntelliJ IDEA Community Edition 2020.2.4\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1kq40uk9QUaXpaw0X0mVtFi8mRP" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/WebDriverSvenTest-main" />
+  </component>
+  <component name="RunManager" selected="Application.HelloWebDriver">
+    <configuration name="HelloWebDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HelloWebDriver" />
+      <module name="hellowebdriver" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HelloWebDriver (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="hellowebdriver" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HelloWebDriver" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HelloWebDriver" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="hellowebdriver" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HelloWebDriver" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HelloWebDriver.SearchResultIsNotEmpty" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="hellowebdriver" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HelloWebDriver" />
+      <option name="METHOD_NAME" value="SearchResultIsNotEmpty" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HelloWebDriver.searchResultIsNotEmpty" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="hellowebdriver" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HelloWebDriver" />
+      <option name="METHOD_NAME" value="searchResultIsNotEmpty" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.HelloWebDriver" />
+        <item itemvalue="TestNG.HelloWebDriver" />
+        <item itemvalue="TestNG.HelloWebDriver.SearchResultIsNotEmpty" />
+        <item itemvalue="TestNG.HelloWebDriver (1)" />
+        <item itemvalue="TestNG.HelloWebDriver.searchResultIsNotEmpty" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1ebe8c57-7c1f-46fc-9164-08a713edc155" name="Default Changelist" comment="" />
+      <created>1606414569634</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1606414569634</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1606420445264">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680/0.1080.1920.515@0.0.1280.680" timestamp="1606420445264" />
+    <state width="1237" height="23" key="GridCell.Tab.0.bottom" timestamp="1606424679624">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="23" key="GridCell.Tab.0.bottom/0.0.1280.680/0.1080.1920.515@0.0.1280.680" timestamp="1606424679624" />
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1606416521486" />
+    <state width="1237" height="23" key="GridCell.Tab.0.center" timestamp="1606424679624">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="23" key="GridCell.Tab.0.center/0.0.1280.680/0.1080.1920.515@0.0.1280.680" timestamp="1606424679624" />
+    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1606416521486" />
+    <state width="1237" height="23" key="GridCell.Tab.0.left" timestamp="1606424679624">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="23" key="GridCell.Tab.0.left/0.0.1280.680/0.1080.1920.515@0.0.1280.680" timestamp="1606424679624" />
+    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1606416521486" />
+    <state width="1237" height="23" key="GridCell.Tab.0.right" timestamp="1606424679624">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="23" key="GridCell.Tab.0.right/0.0.1280.680/0.1080.1920.515@0.0.1280.680" timestamp="1606424679624" />
+    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1606416521486" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1606422255512">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/0.1080.1920.515@0.0.1280.680" timestamp="1606422255512" />
+  </component>
+</project>
