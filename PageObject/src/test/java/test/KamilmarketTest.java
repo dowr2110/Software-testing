@@ -41,12 +41,12 @@ public class KamilmarketTest {
                 .toBasket()
                 .clickToCoupon()
                 .insertWrong();
-       // Assert.assertFalse(WrongCoupon.getErrorCoupon().contains("Код купона введен не мог быть применен к вашему заказу"));
+        Assert.assertFalse(WrongCoupon.getErrorCoupon().contains("Код купона введен не мог быть применен к вашему заказу"));
     }
 
     @AfterTest(alwaysRun = true)
     public void finish() {
-    driver.quit();
+        //driver.quit();
     }
 
 }
