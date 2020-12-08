@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 import page.AddToBasket;
 import page.InsertWrongCouponToBasket;
 
-public class kamilmarketTest {
+public class KamilmarketTest {
 
     private WebDriver driver;
     private static final int TIME_OUT_SECONDS = 20;
