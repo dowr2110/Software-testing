@@ -2,42 +2,51 @@ package test;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
-import java.util.List;
+import page.AddToBasket;
+import page.InsertWrongCouponToBasket;
 
 public class kamilmarketTest {
 
     private WebDriver driver;
-    private static final int TIME_OUT_SECONDS = 10;
+    private static final int TIME_OUT_SECONDS = 20;
 
     @BeforeTest
     public void start() {
+
         driver = new ChromeDriver();
     }
+
     @Test
-    public void searchWithParameter() {
+    public void addToBasket() {
+        AddToBasket cartPage = new AddToBasket(driver)
+                .openPage()
+                .addFiveBulka()
+                .clickToButtonAdd();
+        Assert.assertTrue(cartPage.getName().contains("Bulochka"));
+        Assert.assertTrue(cartPage.getCost().contains("31,50m."));
+    }
 
-        driver.get("https://kamilmarket.com/");
-        WebElement searchInput = driver.findElement(By.id("instasearch"));
-        searchInput.sendKeys("bulka");
-        clickButtonByXpath(By.xpath("//button[@class=\"btn btn-primary btn-icon instasearch-button\"]"));
-
-        List<WebElement> searchResultForBulka = (List<WebElement>) driver.findElement(By.xpath("//div[@class=\"artlist artlist-grid artlist-5-cols\"]"));
-        Assert.assertTrue("searchReasult are empty", searchResultForBulka.size() > 0);
-
-
+    @Test
+    public void insertWrongCoupon(){
+        InsertWrongCouponToBasket WrongCoupon =new InsertWrongCouponToBasket(driver)
+                .openPage()
+                .addToBasket()
+                .openBasket()
+                .toBasket()
+                .clickToCoupon()
+                .insertWrong();
+        Assert.assertFalse(WrongCoupon.getErrorCoupon().contains("Код купона введен не мог быть применен к вашему заказу"));
     }
 
     @AfterTest(alwaysRun = true)
     public void finish() {
-        driver.quit();
+    driver.quit();
     }
 
     private void clickButtonByXpath(By by) {
