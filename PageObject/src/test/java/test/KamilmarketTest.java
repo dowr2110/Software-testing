@@ -49,9 +49,4 @@ public class KamilmarketTest {
     driver.quit();
     }
 
-    private void clickButtonByXpath(By by) {
-        new WebDriverWait(driver, TIME_OUT_SECONDS)
-                .until(ExpectedConditions.presenceOfElementLocated(by))
-                .click();
-    }
 }
