@@ -20,7 +20,7 @@ public class AddToBasket {
 
     public  AddToBasket openPage(){
         driver.get(PRODUCT_URL);
-       // driver.manage().window().maximize();
+        driver.manage().window().maximize();
         return  this;
     }
 
