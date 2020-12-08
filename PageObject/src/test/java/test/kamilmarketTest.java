@@ -1,3 +1,4 @@
+package test;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -7,9 +8,11 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
 import java.util.List;
 
-public class WebDriverTest {
+public class kamilmarketTest {
 
     private WebDriver driver;
     private static final int TIME_OUT_SECONDS = 10;
@@ -18,7 +21,7 @@ public class WebDriverTest {
     public void start() {
         driver = new ChromeDriver();
     }
-
+    @Test
     public void searchWithParameter() {
 
         driver.get("https://kamilmarket.com/");
@@ -29,13 +32,6 @@ public class WebDriverTest {
         List<WebElement> searchResultForBulka = (List<WebElement>) driver.findElement(By.xpath("//div[@class=\"artlist artlist-grid artlist-5-cols\"]"));
         Assert.assertTrue("searchReasult are empty", searchResultForBulka.size() > 0);
 
-        searchInput = driver.findElement(By.id("instasearch"));
-        searchInput.clear();
-        searchInput.sendKeys("011941");
-        clickButtonByXpath(By.xpath("//button[@class=\"btn btn-primary btn-icon instasearch-button\"]"));
-
-        List<WebElement> searchResultForNumber = (List<WebElement>) driver.findElement(By.xpath("//a[@class=\"art-picture img-center-container\"]"));
-        Assert.assertTrue("searchReasult are empty", searchResultForNumber.size() == 1);
 
     }
 
