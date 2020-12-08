@@ -20,7 +20,7 @@ public class InsertWrongCouponToBasket {
 
     public  InsertWrongCouponToBasket openPage(){
         driver.get(PRODUCT_URL);
-        driver.manage().window().maximize();
+        //driver.manage().window().maximize();
         return  this;
     }
 
