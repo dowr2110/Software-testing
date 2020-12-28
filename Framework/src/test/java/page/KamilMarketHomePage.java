@@ -13,6 +13,12 @@ public class KamilMarketHomePage extends AbstractPage {
     private WebElement searchButton;
     @FindBy(xpath = "//span[@title=\"Dowr\"]")
     private WebElement nameLabel;
+    @FindBy(xpath = "//a[@href=\"/Customer/Info\"]")
+    private WebElement menubarButton;
+    @FindBy(xpath = "//a[span=\"My account\"]")
+    private WebElement myFrofileButton;
+    @FindBy(xpath = "//a[span=\"Output\"]")
+    private WebElement outputButton;
     @FindBy(xpath = "//a[@class='menubar-link']")
     private WebElement changeLanguageButton;
     @FindBy(xpath = "//a[@title=\"English (United Kingdom)\"]")
@@ -34,7 +40,6 @@ public class KamilMarketHomePage extends AbstractPage {
         driver.get(PAGE_URL);
         changeLanguageButton.click();
         toEnglishButton.click();
-       // logger.info("Login page opened");
         return this;
     }
 
@@ -42,18 +47,24 @@ public class KamilMarketHomePage extends AbstractPage {
 
         inputSearch.sendKeys(term);
         searchButton.click();
-       // logger.info("input term");
         return this;
     }
 
     public KamilMarketSearchResultPage searchTerm(){
         searchInput.sendKeys(Keys.ENTER);
-        //logger.info("search fail term");
         return new KamilMarketSearchResultPage(driver);
     }
 
     public String getNameInHomePage(){
-            return nameLabel.getText();
+        return nameLabel.getText();
+    }
+
+    public String checkOutputInHomePage(){
+        return outputButton.getText();
+    }
+    public String checkProfifeInHomePage(){
+        menubarButton.click();
+        return myFrofileButton.getText();
     }
 
     public String getIdConcreteInHomePage() {

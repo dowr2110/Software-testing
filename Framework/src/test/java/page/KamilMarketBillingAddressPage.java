@@ -20,7 +20,6 @@ public class KamilMarketBillingAddressPage extends AbstractPage{
 
     public KamilMarketBillingAddressPage openPage() {
         driver.get(PAGE_URL);
-        // logger.info("Login page opened");
         return this;
     }
 
@@ -40,7 +39,4 @@ public class KamilMarketBillingAddressPage extends AbstractPage{
     public String getAddressInBillingAddress() {
         return waitForElementLocatedBy(driver, By.xpath(checkAddressLabel), TIME_OUT_SECONDS).getText();
     }
-
-
-
 }

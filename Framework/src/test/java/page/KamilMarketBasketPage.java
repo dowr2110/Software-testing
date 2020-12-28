@@ -78,7 +78,6 @@ public class KamilMarketBasketPage extends AbstractPage {
         toWishListButton.click();
         return new KamilMarketWishListPage(driver);
     }
-
 }
 
 

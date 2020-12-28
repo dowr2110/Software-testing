@@ -3,9 +3,6 @@ package page;
 import model.User;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class KamilMarketLoginPage extends AbstractPage{
@@ -32,6 +29,4 @@ public class KamilMarketLoginPage extends AbstractPage{
 
         return new KamilMarketHomePage(driver);
     }
-
-
 }

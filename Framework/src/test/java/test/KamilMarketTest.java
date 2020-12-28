@@ -2,7 +2,6 @@ package test;
 
 import model.Bulka;
 import model.User;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 import page.*;
 import service.BulkaCreator;
@@ -31,8 +30,8 @@ public class KamilMarketTest extends  CommonConditions {
                 .inputWrongPromocode("dowran")
                 .addPromocode();
         assertThat(checkPromoCode.getErrorMessageInBasket().contains("coupon Code entered could not be applied to your order")).isTrue();
-        assertThat(checkPromoCode.getCostInBasket()).isEqualTo("6,30m.");
-        assertThat(checkPromoCode.getCostAfterInserPromoInBasket()).isEqualTo("6,30m.");
+        assertThat(checkPromoCode.getCostInBasket()).isEqualTo(checkPromoCode.getCostAfterInserPromoInBasket( ));
+
     }
 
     @Test(priority = 3)
@@ -61,6 +60,8 @@ public class KamilMarketTest extends  CommonConditions {
                 .openPage()
                 .login(testUser);
         assertThat(loggedUserFirstName.getNameInHomePage()).isEqualTo(testUser.getFirstName());
+        assertThat(loggedUserFirstName.checkProfifeInHomePage().contains("My account")).isTrue();
+        assertThat(loggedUserFirstName.checkOutputInHomePage().contains("Output")).isTrue();
     }
 
     @Test(priority = 6)
