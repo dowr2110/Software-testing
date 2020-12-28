@@ -1,4 +1,5 @@
 package pageobject;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -21,44 +22,44 @@ public class KamilMarketItemPage extends Page {
     @FindBy(xpath = "//div[@class='art-picture-block']")
     private WebElement SelectButton;
 
-    public KamilMarketItemPage(WebDriver driver){
-    super(driver);
+    public KamilMarketItemPage(WebDriver driver) {
+        super(driver);
     }
 
-    public KamilMarketItemPage openPage(){
-         driver.get(PAGE_URL);
-         new WebDriverWait(driver, WAIT_TIMEOUT_SECONDS)
+    public KamilMarketItemPage openPage() {
+        driver.get(PAGE_URL);
+        new WebDriverWait(driver, WAIT_TIMEOUT_SECONDS)
                 .until(PageLoaded());
-         driver.manage().window().maximize();
-         return this;
+        driver.manage().window().maximize();
+        return this;
     }
 
-    public KamilMarketItemPage searchElement(String name){
-         SearchInput.sendKeys(name);
-         SearchButton.click();
-         SelectButton.click();
-         new WebDriverWait(driver, WAIT_TIMEOUT_SECONDS)
+    public KamilMarketItemPage searchElement(String name) {
+        SearchInput.sendKeys(name);
+        SearchButton.click();
+        SelectButton.click();
+        new WebDriverWait(driver, WAIT_TIMEOUT_SECONDS)
                 .until(PageLoaded());
-         return this;
+        return this;
     }
 
-    public KamilMarketItemPage selectMoreThanMaxValue(String count){
+    public KamilMarketItemPage selectMoreThanMaxValue(String count) {
         CountInput.clear();
         CountInput.sendKeys(count);
         AddToBasketButton.click();
         return this;
     }
 
-    public KamilMarketItemPage addToBasket(){
+    public KamilMarketItemPage addToBasket() {
         AddToBasketButton.click();
         return this;
     }
+
     public Boolean getErrorMessage() {
         new WebDriverWait(driver, WAIT_TIMEOUT_SECONDS)
                 .until(PageLoaded());
         return !(ErrorMessage.isDisplayed());
     }
-
 
 
 }
